@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bird : MonoBehaviour
+public class RepeatingBackground : MonoBehaviour
 {
+    private BoxCollider2D groundCollider;
+    private float groundHorizontatlLength;
     // Start is called before the first frame update
     void Start()
     {

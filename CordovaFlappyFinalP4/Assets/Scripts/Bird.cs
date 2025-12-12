@@ -35,6 +35,7 @@ private Rigidbody2D rb2d;
     {
         isDead = true;
         anim.SetTrigger("Die");
+        GameControl.instance.BirdDied ();
     }
 }
 
