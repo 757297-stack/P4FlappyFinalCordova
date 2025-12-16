@@ -409,6 +409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 554192140}
   - component: {fileID: 554192139}
+  - component: {fileID: 554192141}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -429,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1495897514}
+  scoreText: {fileID: 717703157}
   gameOver: 0
   scrollSpeed: -1.5
 --- !u!4 &554192140
@@ -446,6 +448,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &554192141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554192138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0dc77b2984770e43b62ab036192c1dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPoolSize: 5
+  columnPrefab: {fileID: 5166554088390393422, guid: 39fe96635e2b7464d9a65a16d15144a6, type: 3}
+  spawnRate: 4
+  columnMin: -2
+  columnMax: 2
 --- !u!1 &717703154
 GameObject:
   m_ObjectHideFlags: 0
